@@ -5,36 +5,40 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.video-holder {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: rgba(12, 12, 12, 0.5);
-    color: white;
-}
-
-.video-bg {
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
+.bg-video {
+    position: fixed;
     right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
+#navbar {
+    height: 80px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#about-me {
+    height: 200px;
+}
+
+#game-1 {
+    height: 600px;
+}
+
+#game-2 {
+    height: 600px;
+}
 
 @media (min-aspect-ratio: 16/9) {
-    .video-bg {
+    .bg-video {
         width: 100%;
         height: auto;
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
-    .video-bg {
+    .bg-video {
         width: auto;
         height: 100%;
     }
