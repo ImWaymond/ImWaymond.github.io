@@ -3,6 +3,13 @@
   padding: 0;  
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 .bg-video {
@@ -12,22 +19,61 @@
     z-index: -1;
 }
 
-#navbar {
+header {
     height: 80px;
-    background-color: black;
-    color: whitesmoke;
+}
+
+nav {
+    position: fixed;
+    background-color: #0082e6;
+    height: 80px;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: white;
+    font-size: 25px;
+    padding: 0 0;
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 7px 13px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #1b9bff;
+    transition: 0.3s;
 }
 
 #about-me {
-    height: 200px;
+    height: 600px;
+    position: relative;
 }
 
-#game-1 {
+#game-1,
+#game-2,
+#game-3 {
     height: 600px;
-}
-
-#game-2 {
-    height: 600px;
+    position: relative;
 }
 
 @media (min-aspect-ratio: 16/9) {
