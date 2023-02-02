@@ -58,40 +58,54 @@ nav .logo {
     line-height: 80px;
 }
 
-nav ul {
+nav .navigation {
     float: left;
-    margin-left: 270px;
+    margin-left: 300px;
 }
 
-nav ul li {
+nav .navigation li {
     display: inline-block;
     line-height: 80px;
     margin: 0 10px;
 }
 
-nav ul li a {
+nav .navigation li a {
     color: white;
     padding: 7px 13px;
     font-size: 15px;
     border-radius: 5px;
 }
 
-nav ul li a:hover {
-    background-color: rgba(128, 128, 128, 0.5);
+nav .navigation li a:hover {
+    background-color: gray;
     transition: 0.3s;
+}
+
+nav .social-media {
+    height: 100%;
+    float: right;
+    margin-right: 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+nav .social-media li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav .social-media li img {
+    width: 40px;
+    vertical-align: middle;
 }
 
 #about-me,
 #game-1,
-#game-2,
-#game-3 {
-    height: 600px;
+#game-2 {
+    height: 100vh;
     position: relative;
     color: white;
-}
-
-#about-me {
-    height: 900px;
 }
 
 .about-me-left {
