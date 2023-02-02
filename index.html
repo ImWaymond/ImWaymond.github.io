@@ -2,22 +2,27 @@
 <html>
 
 <head>
-  <title>I'm Waymond</title>
+  <title>I am Waymond</title>
   <!--link rel="icon" type="image/png" href="images/OaktechIcon.png" sizes="16x16"-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <video class="bg-video" autoplay loop muted plays-inline>
-    <source src="assets/videos/background-simple.mp4" type="video/mp4">
-  </video>
+  <div class="bg">
+    <video class="bg-video" autoplay loop muted plays-inline>
+      <source src="assets/videos/bg_BW.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+  </div>
 
   <header>
       <nav>
-        <a href="#home" class="logo">Waymond</a>
+        <a href="#about-me" class="logo">Waymond</a>
         <ul>
-          <li><a href="#about-me">About Me</a></li>
           <li><a href="#game-1">Game 1</a></li>
           <li><a href="#game-2">Game 2</a></li>
           <li><a href="#game-3">Game 3</a></li>
@@ -26,7 +31,19 @@
   </header>
 
   <section id="about-me">
-    <h1>About Me</h1>
+    <div class="about-me-left">
+      <h2>So, how's life? It's me,</h2>
+      <h1>Waymond Tang</h1>
+      <p>As a game developer, I have a passion for creating games and applications that people love to use.
+        I take special care to ensure that the user experience is top-notch and that my creations are enjoyable, intuitive and accessible.
+        <br>
+        <br>
+        My expertise in C# and Unity, as well as my experience in full stack development, JavaScript, Python, HTML and CSS,
+        allows me to create high-quality and engaging projects that deliver exceptional user experiences.</p>
+    </div>
+    <div class="about-me-right">
+
+    </div>
   </section>
 
   <section id="game-1">
@@ -38,8 +55,12 @@
   </section>
 
   <section id="game-3">
-    <h1>Game 2</h1>
+    <h1>Game 3</h1>
   </section>
+
+  <footer>
+    <h1>Copyright © 2023 Waymond | All rights reserved</h1>
+  </footer>
   
 </body>
 
