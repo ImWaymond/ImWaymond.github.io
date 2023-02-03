@@ -8,6 +8,8 @@
 
   -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+
+    color: white;
 }
 
 *::-webkit-scrollbar {
@@ -49,7 +51,6 @@ nav {
 }
 
 nav .logo {
-    color: white;
     font-size: 25px;
     padding: 0 0;
     font-weight: bold;
@@ -70,7 +71,6 @@ nav .navigation li {
 }
 
 nav .navigation li a {
-    color: white;
     padding: 7px 13px;
     font-size: 15px;
     border-radius: 5px;
@@ -100,12 +100,13 @@ nav .social-media li img {
     vertical-align: middle;
 }
 
-#about-me,
-#game-1,
-#game-2 {
+#about-me {
     height: 100vh;
     position: relative;
-    color: white;
+}
+#games {
+    height: 900px;
+    position: relative;
 }
 
 .about-me-left {
@@ -157,11 +158,9 @@ footer {
     height: 60px;
     position: relative;
     background-color: #1c1c2b;
-    color: white;
 }
 
 footer h1 {
-    color: white;
     font-size: 13px;
     padding: 0 0;
     font-weight: bold;
